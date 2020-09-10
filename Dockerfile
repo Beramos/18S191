@@ -14,6 +14,6 @@ RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
 EXPOSE 1234
-CMD [ "julia", "/home/pluto/startup.jl" ]
+CMD [ "julia", "/home/jovyan/startup.jl" ]
 
 # docker run <image> jupyter notebook <arguments>
