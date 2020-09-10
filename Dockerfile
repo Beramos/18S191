@@ -1,2 +1,2 @@
-FROM shashankpv/plutojl-binder:1400fdf17368
+FROM shashankpv/plutojl-binder:v1
 
