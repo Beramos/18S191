@@ -1,4 +1,5 @@
 FROM shashankpv/plutojl-binder:v1
 
-USER jovyan
+RUN chown -R jovyan /home/jovyan/
 COPY . /home/jovyan/
+USER jovyan
