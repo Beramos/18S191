@@ -7,13 +7,17 @@ ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
 
 USER root
-RUN usermod -l jovyan pluto
+RUN apt-get update \
+    && apt-get -y install --no-install-recommends python3-pip \
+    && pip3 install -vU setuptools \
+    && pip3 install jupyter
 
+RUN usermod -l jovyan pluto
 COPY . ${HOME}
 RUN chown -R ${NB_UID} ${HOME}
+
 USER ${NB_USER}
-
 EXPOSE 1234
-CMD [ "julia", "/home/jovyan/startup.jl" ]
+EXPOSE 8080
 
-# docker run <image> jupyter notebook <arguments>
+CMD [ "julia", "-e \"import Pluto; Pluto.run(\"0.0.0.0\", 1234)\"" ]
