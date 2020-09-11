@@ -1,4 +1,4 @@
-FROM shashankpv/plutojl-binder:v2
+FROM shashankpv/plutojl-binder:0.1
 
 USER root
 COPY . /home/jovyan/
