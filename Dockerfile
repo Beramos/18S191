@@ -1,4 +1,4 @@
-FROM shashankpv/plutojl-binder:v1
+FROM shashankpv/plutojl-binder:v2
 
 RUN chown -R jovyan /home/pluto/
 COPY . /home/pluto/
