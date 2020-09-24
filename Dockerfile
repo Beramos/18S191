@@ -1,4 +1,4 @@
-FROM plutojl/pluto-binder:f4114dde25d4
+FROM plutojl/pluto-binder:latest
 
 USER root
 COPY . /home/jovyan/
