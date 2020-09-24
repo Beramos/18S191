@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shashankp/18S191/master?urlpath=%2Fpluto)
+
 # 18.S191: Introduction to computational thinking for real-world problems
 
 <p align="center"><a href="http://mitmath.github.io/18S191/Fall20"> <b>Go to course website</b> :balloon:</a></p>
